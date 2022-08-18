@@ -3,8 +3,7 @@
     "simple-import-sort"
   ],
   "extends": [
-    "next",
-    "next/core-web-vitals"
+    "next"
   ],
   "rules": {
     "simple-import-sort/imports": "error"
