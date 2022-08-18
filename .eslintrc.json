@@ -1,11 +1,11 @@
 {
   "plugins": [
-    "simple-import-sort"
+    // "simple-import-sort"
   ],
   "extends": [
     "next"
   ],
   "rules": {
-    "simple-import-sort/imports": "error"
+    // "simple-import-sort/imports": "error"
   }
 }
