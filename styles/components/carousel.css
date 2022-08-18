@@ -1,0 +1,12 @@
+.carousel .control-dots {
+  text-align: left;
+  margin: 40px 0 40px 50px;
+}
+
+.carousel .control-dots .dot {
+  width: 16px;
+  height: 16px;
+  margin: 0 6px;
+  opacity: 0.5;
+  box-shadow: none;
+}

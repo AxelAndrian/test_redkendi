@@ -2,21 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Poppins/Poppins-Bold.ttf") format("truetype");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+  font-family: "Mikkel";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Mikkel/Mikkel Sans Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mikkel";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./fonts/Mikkel/Mikkel Sans Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mikkel";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./fonts/Mikkel/Mikkel Sans Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Mikkel";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Mikkel/Mikkel Sans Black.ttf") format("truetype");
 }
 
-* {
-  box-sizing: border-box;
+@layer base {
+  html,
+  body {
+    font-family: "Poppins", "sans-serif";
+  }
 }
 
 /* @media (prefers-color-scheme: dark) {
