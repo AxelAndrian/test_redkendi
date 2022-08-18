@@ -1,0 +1,32 @@
+.carousel .control-dots {
+  text-align: left;
+  margin: 40px 0 40px 50px;
+}
+
+.carousel .control-dots .dot {
+  width: 16px;
+  height: 16px;
+  margin: 0 6px;
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 640px) {
+  .carousel.carousel-slider {
+    height: 200px;
+  }
+
+  .carousel .control-dots {
+    text-align: center;
+    margin: 0;
+    bottom: 15px;
+  }
+
+  .carousel .control-dots .dot {
+    background-color: #c3c3c3;
+  }
+
+  .carousel .control-dots .dot.selected {
+    background-color: #ab3224;
+  }
+}
