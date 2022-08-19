@@ -20,7 +20,7 @@ export default function Footer() {
                   <a href="#" className='text-gray-400 hover:text-gray-500 text-sm my-1.5 md:my-0 md:mx-3'>Kostumisasi pesanan</a>
                 </div>
                 <div className='mt-10 md:mx-3'>
-                  <p className='text-sm font-medium text-left md:text-right flex flex-col md:flex-row md:justify-end md:items-center'>Hubungi kami jika memerlukan informasi 
+                  <div className='text-sm font-medium text-left md:text-right flex flex-col md:flex-row md:justify-end md:items-center'>Hubungi kami jika memerlukan informasi 
                     &nbsp;<span className='text-red-700 mt-2 md:mt-0'>0812 8594 9895</span>
                     <div className='my-2 md:my-0'>
                       <a href="#" className='md:ml-3'>
@@ -30,7 +30,7 @@ export default function Footer() {
                         <Image src='/images/yt-circle-outline-red.svg' width={24} height={24} />
                       </a>
                     </div>
-                  </p>
+                  </div>
                 </div>
               </div>
             </div>

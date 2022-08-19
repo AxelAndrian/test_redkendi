@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import Alert from '../components/sections/alert'
-import Navbar from '../components/sections/navbar'
+import Alert from '../components/alert'
+import Navbar from '../components/navbar'
 import Slider from '../components/sections/slider'
 import Feature from '../components/sections/feature'
 import Service from '../components/sections/service'
@@ -43,7 +43,7 @@ export default function Home() {
           <Partner />
         {/* PARTNER */}
         {/* HOW WE WORK */}
-          {/* <Workflow /> */}
+          <Workflow />
         {/* HOW WE WORK */}
         {/* TESTIMONY */}
           <Testimonial />

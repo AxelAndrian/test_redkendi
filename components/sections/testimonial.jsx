@@ -9,8 +9,8 @@ export default function Testimonial() {
               <h1 className='text-red-700 font-mikkel text-center md:text-left text-4xl md:text-6xl font-semibold'>Kata Mereka Yang Tercinta</h1>
             </div>
             <div className="w-full flex flex-wrap py-0 md:py-20">
-              <div className="w-full md:w-1/12">
-                <FaQuoteLeft className='text-black w-24 h-24 mx-auto md:mx-0' />
+              <div className="w-full md:w-1/12 mt-10 md:mt-0">
+                <FaQuoteLeft className='text-black w-16 h-16 md:w-24 md:h-24 mx-auto md:mx-0' />
               </div>
               <div className="w-full md:w-2/12 hidden md:flex justify-center mt-10">
                 <div>
@@ -18,12 +18,12 @@ export default function Testimonial() {
                 </div>
               </div>
               <div className="w-full md:w-9/12 mt-10">
-                <p className='text-xl text-center md:text-left'>
+                <div className='text-xl text-center md:text-left'>
                   Kami sangat terbantu oleh katering kendiXpress terutama di masa <br />
                   wabah COVID ini. Respon semua teman-teman bagus, katanya <br />
                   makanannya enak! <br />
                   Pokoknya recommend banget deh!
-                </p>
+                </div>
                 <div className="w-full md:w-2/12 flex md:hidden justify-center mt-10">
                   <div>
                     <Image src='/images/person.png' width={155} height={153} alt='Person' />
