@@ -6,7 +6,7 @@ export default function Company() {
   const [companys, setCompanys] = useState([]);
 
   const fetchCompanys = async () => {
-    const result = await axios.get('/api/v1/company');
+    const result = await axios.get(process.env.NEXT_BASE_API_URL + '/api/v1/company');
     setCompanys(result.data.data);
   }
 

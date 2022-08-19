@@ -7,7 +7,8 @@ export default function Service() {
   const [services, setServices] = useState([]);
 
   const fetchServices = async () => {
-    const result = await axios.get('/api/v1/service');
+    console.log(process.env.NEXT_BASE_API_URL);
+    const result = await axios.get(process.env.NEXT_BASE_API_URL + '/api/v1/service');
     setServices(result.data.data);
   }
 
