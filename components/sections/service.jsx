@@ -1,7 +1,20 @@
 import Image from 'next/image'
+import axios from 'axios'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
+import { useEffect, useState } from 'react';
 
 export default function Service() {
+  const [services, setServices] = useState([]);
+
+  const fetchServices = async () => {
+    const result = await axios.get('/api/v1/service');
+    setServices(result.data.data);
+  }
+
+  useEffect(() => {
+    fetchServices();
+  }, [])
+
   return (
     <section className='my-12 md:my-36'>
       <div className="w-full">
@@ -9,8 +22,15 @@ export default function Service() {
         <h1 className='text-red-700 font-mikkel text-center text-4xl md:text-6xl font-semibold'>Untuk Setiap Momen</h1>
       </div>
       <div className='w-full mt-6 md:mt-16 mb-6 overflow-x-scroll md:overflow-auto'>
-        <div className='w-[1000px] md:w-full flex flex-nowrap md:flex-wrap px-0 md:px-[100px] justify-center items-center'>
-          <div className='mr-2 md:mr-5'>
+        <div className='w-[1000px] md:w-full flex flex-nowrap md:flex-wrap px-0 md:px-[240px] justify-center md:justify-around items-center'>
+          {
+            services.map((service, index) => (
+              <div className={`mr-2 ${index == 2 || index == 5 ? 'md:mr-0' : 'md:mr-5'}`} key={index}>
+                <Image src={service} width={315} height={446} />
+              </div>    
+            ))
+          }
+          {/* <div className='mr-2 md:mr-5'>
             <Image src='/images/service/service_1.png' width={315} height={446} alt='Service One' />
           </div>
           <div className='mr-2 md:mr-0 ml-2 md:ml-0'>
@@ -19,8 +39,6 @@ export default function Service() {
           <div className='mr-2 md:mr-0 ml-2 md:ml-5'>
             <Image src='/images/service/service_3.png' width={315} height={446} alt='Service Three' />
           </div>
-        {/* </div> */}
-        {/* <div className='w-full flex justify-center items-center mt-10'> */}
           <div className='mr-2 md:mr-5 ml-2 md:ml-0 mt-0 md:mt-10'>
             <Image src='/images/service/service_4.png' width={315} height={446} alt='Service Four' />
           </div>
@@ -29,7 +47,7 @@ export default function Service() {
           </div>
           <div className='mr-2 md:mr-0 ml-2 md:ml-5 mt-0 md:mt-10'>
             <Image src='/images/service/service_6.png' width={315} height={446} alt='Service Six' />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="w-full">
