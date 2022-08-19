@@ -6,7 +6,7 @@ export default function Slider() {
     <section className='my-6 md:my-20'>
       
       <div className='w-full relative flex md:block flex-col md:flex-row'>
-        <Carousel showStatus={false} showArrows={false} className='order-2'>
+        <Carousel showStatus={false} showArrows={false} className='slider order-2'>
           <div className='cursor-pointer'>
             <Image src='/images/banner/banner_website_01.jpg' width={3600} height={1440} alt='Banner 01' />
           </div>
